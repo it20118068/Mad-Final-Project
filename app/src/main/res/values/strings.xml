@@ -11,10 +11,10 @@
     <string name="et_date">DD/MM/YY</string>
     <string name="et_rooms">Qty</string>
     <string name="tv_myBookings">MY BOOKINGS</string>
-    <string name="tv_payement">PAYMENT</string>
+    <string name="tv_payement">RESERVATION</string>
     <string name="tv_cusName">Customer Name</string>
     <string name="tv_topPayment">Rs. 26000</string>
-    <string name="btn_pay">PAY NOW</string>
+    <string name="btn_pay">BOOK NOW</string>
     <string name="btn_next">NEXT</string>
     <string name="tv_listDate">DD/MM/YY</string>
     <string name="title_activity_home">Home</string>
