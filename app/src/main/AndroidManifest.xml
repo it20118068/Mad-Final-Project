@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject">
+        <activity
+            android:name="tharuka.hotelEdit"
+            android:exported="true" />
+        <activity
+            android:name="tharuka.HotelProfile"
+            android:exported="true" />
+        <activity
+            android:name="tharuka.HotelCreation"
+            android:exported="true" />
+        <activity
+            android:name="nadun.editProfile"
+            android:exported="true" />
+        <activity
+            android:name="nadun.login"
+            android:exported="true" />
+        <activity
+            android:name="nadun.profile"
+            android:exported="true" />
+        <activity
+            android:name="nadun.create_acc2"
+            android:exported="true" />
+        <activity
+            android:name=".nadun_CreateAccount"
+            android:exported="true" />
+        <activity
+            android:name=".bookingModify"
+            android:exported="true" />
+        <activity
+            android:name=".ViewBooking"
+            android:exported="true" />
+        <activity
+            android:name=".myNavigation"
+            android:exported="true" />
+        <activity
+            android:name=".NavigationMenu"
+            android:exported="true" />
+        <activity
+            android:name=".ProjectHome"
+            android:exported="true" />
+        <activity
+            android:name=".payment"
+            android:exported="true" />
+        <activity
+            android:name=".My_Bookings"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
