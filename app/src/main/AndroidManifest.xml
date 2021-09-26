@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject">
         <activity
-            android:name="testCases.testActivity"
+
             android:exported="true" />
         <activity
             android:name="bashitha.testBhashitha"
