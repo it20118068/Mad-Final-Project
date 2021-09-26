@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject">
         <activity
+            android:name="bashitha.asdads"
+            android:exported="true" />
+        <activity
             android:name="bashitha.testBhashitha"
             android:exported="true" />
         <activity
