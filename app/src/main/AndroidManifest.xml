@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject">
         <activity
+            android:name=".Gittest"
+            android:exported="true" />
+        <activity
             android:name="tharuka.hotelEdit"
             android:exported="true" />
         <activity
