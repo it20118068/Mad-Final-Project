@@ -59,7 +59,7 @@ public class HotelCreation extends AppCompatActivity {
             dbid = String.valueOf(count+1);
         }
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("hotelDetails").child("HotelName");
+        dbRef = FirebaseDatabase.getInstance().getReference().child("hotelDetails");
 
         try{
             if(TextUtils.isEmpty(et_name.getText()) || TextUtils.isEmpty(et_address.getText()) || TextUtils.isEmpty(et_desc.getText()) || TextUtils.isEmpty(et_uname.getText()) || TextUtils.isEmpty(et_pass.getText()))
@@ -73,7 +73,7 @@ public class HotelCreation extends AppCompatActivity {
                 o.setPass(et_pass.getText().toString().trim());
                 o.setId(dbid.trim());
 
-                dbRef.child("1").setValue(o);
+                dbRef.child(dbid).setValue(o);
 
                 Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
 
