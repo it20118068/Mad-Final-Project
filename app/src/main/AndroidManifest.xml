@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject">
-
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
         <activity
             android:name="bashitha.testBhashitha"
             android:exported="true" />
-
         <activity
             android:name="testCases.testActivity"
             android:exported="true" />
-
         <activity
             android:name=".Gittest"
             android:exported="true" />
