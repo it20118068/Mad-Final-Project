@@ -4,30 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/tv_bookNow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/tv_bookNow"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_hotelName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/tv_hotelName"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_bookNow" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -37,6 +28,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="68dp"
         android:text="@string/tv_name"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_hotelName" />
 
@@ -50,6 +42,7 @@
         android:ems="10"
         android:hint="@string/et_name"
         android:inputType="textPersonName"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
         tools:ignore="TouchTargetSizeCheck" />
@@ -62,6 +55,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:text="@string/tv_checkIn"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
@@ -75,6 +69,7 @@
         android:ems="10"
         android:hint="@string/et_date"
         android:inputType="date"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_checkIn"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -88,6 +83,7 @@
         android:ems="10"
         android:hint="@string/et_date"
         android:inputType="date"
+        android:textColor="@color/white"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_checkin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -101,6 +97,7 @@
         android:layout_marginStart="152dp"
         android:layout_marginLeft="152dp"
         android:text="@string/tv_checkOut"
+        android:textColor="@color/white"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_checkIn"
         app:layout_constraintStart_toEndOf="@+id/tv_checkIn" />
 
@@ -112,19 +109,21 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:text="@string/tv_Rooms"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_checkin" />
 
     <EditText
         android:id="@+id/et_rooms"
-        android:layout_width="107dp"
-        android:layout_height="36dp"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/et_rooms"
         android:inputType="number"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_Rooms"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -138,7 +137,27 @@
         android:layout_marginRight="32dp"
         android:onClick="next"
         android:text="@string/btn_next"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_rooms" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/teal_700"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="24dp">
+
+        <TextView
+            android:id="@+id/tv_bookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="@string/tv_bookNow"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
