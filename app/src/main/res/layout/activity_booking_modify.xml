@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/qweqe"
     tools:context=".bookingModify">
 
     <TextView
@@ -35,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
         android:text="@string/tv_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_hotelNameM" />
@@ -119,7 +120,7 @@
     <EditText
         android:id="@+id/et_roomsM"
         android:layout_width="107dp"
-        android:layout_height="36dp"
+        android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
@@ -132,14 +133,15 @@
 
     <Button
         android:id="@+id/btn_nextM"
-        android:layout_width="95dp"
+        android:layout_width="250dp"
         android:layout_height="66dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="28dp"
         android:onClick="modifyBooking"
-        android:text="@string/btn_next"
+        android:text="@string/btn_saveModify"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_roomsM" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

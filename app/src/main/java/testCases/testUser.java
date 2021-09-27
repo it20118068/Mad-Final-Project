@@ -1,8 +1,11 @@
 package testCases;
 
+import android.net.Uri;
+
 public class testUser {
     private String id;
     private  String name;
+    private Uri imgUri;
 
     public testUser() {
     }
@@ -23,4 +26,11 @@ public class testUser {
         this.name = name;
     }
 
+    public Uri getImgUri() {
+        return imgUri;
+    }
+
+    public void setImgUri(Uri imgUri) {
+        this.imgUri = imgUri;
+    }
 }

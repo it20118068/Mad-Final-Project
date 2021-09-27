@@ -38,10 +38,10 @@ public class testActivity extends AppCompatActivity {
     EditText et_name, et_id;
     Button btn_add,btn_show;
     ImageView img;
-     public Uri imageUri;
+    public Uri imageUri;
 
-     private FirebaseStorage storage;
-     private StorageReference storageReference;
+    private FirebaseStorage storage;
+    private StorageReference storageReference;
 
     testUser st;
 
@@ -70,6 +70,10 @@ public class testActivity extends AppCompatActivity {
         choosePic();
     }
 
+
+
+
+
     private void choosePic() {
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -86,7 +90,8 @@ public class testActivity extends AppCompatActivity {
         if(requestCode==1 && resultCode==RESULT_OK && data!=null && data.getData() != null ){
             imageUri = data.getData();
             img.setImageURI(imageUri);
-            uploadImage();
+            st.setImgUri(imageUri);
+
         }
     }
 
@@ -96,6 +101,8 @@ public class testActivity extends AppCompatActivity {
 
         final String randomKey = UUID.randomUUID().toString();
         StorageReference riversRef = storageReference.child("images/"+randomKey);
+
+     //   riversRef.getFile(imageUri);
 
         riversRef.putFile(imageUri)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -112,6 +119,9 @@ public class testActivity extends AppCompatActivity {
                 });
     }
 
+
+
+
     public void addUser(View view){
         dbRef = FirebaseDatabase.getInstance().getReference().child("testUser");
 
@@ -121,10 +131,12 @@ public class testActivity extends AppCompatActivity {
             else {
 
                 st.setName(et_name.getText().toString().trim());
-               // st.setId(et_id.getText().toString().trim());
+               st.setId(et_id.getText().toString().trim());
 
 
+             //    uploadImage();
                 dbRef.push().setValue(st);
+
 
                 Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
 
@@ -133,6 +145,26 @@ public class testActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Invalid Rooms", Toast.LENGTH_SHORT).show();
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
