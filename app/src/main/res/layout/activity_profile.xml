@@ -10,9 +10,9 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="427dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/untitled_1" />
@@ -21,22 +21,23 @@
         android:id="@+id/tv_pName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="24dp"
         android:text="Dilshan Avishka"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="144dp"
         android:text="Account Details"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_pName" />
@@ -44,11 +45,12 @@
     <TextView
         android:id="@+id/textView16"
         android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:text="Contact No"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/tv_contactNo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,11 +59,12 @@
     <TextView
         android:id="@+id/textView17"
         android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="24dp"
         android:text="Email"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/tv_email"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,10 +73,11 @@
     <TextView
         android:id="@+id/tv_contactNo"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:text="0712554785"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -81,11 +85,12 @@
 
     <TextView
         android:id="@+id/tv_email"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="183dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="nadum123@gmail.com"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -95,7 +100,7 @@
         android:id="@+id/tv_signOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="Sign Out"
@@ -107,35 +112,35 @@
         android:id="@+id/btn_fdHistory"
         android:layout_width="206dp"
         android:layout_height="59dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="@string/btn_feedHistory"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_editAccount" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteAccount" />
 
     <Button
         android:id="@+id/btn_deleteAccount"
         android:layout_width="211dp"
         android:layout_height="56dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:text="DELETE ACCOUNT"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_fdHistory" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_editAccount" />
 
     <Button
         android:id="@+id/btn_editAccount"
         android:layout_width="203dp"
         android:layout_height="56dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="40dp"
         android:onClick="edit"
         android:text="EDIT ACCOUNT"
-        app:layout_constraintBottom_toTopOf="@+id/btn_fdHistory"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_email"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
