@@ -15,7 +15,7 @@
         android:layout_marginTop="140dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:onClick="uploadPic"
+        android:onClick="addUser"
         android:text="Add"
         app:layout_constraintEnd_toStartOf="@+id/btn_testShow"
         app:layout_constraintHorizontal_bias="0.5"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
-        android:onClick="validation"
+        android:onClick="uploadPic"
         android:text="Show"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_testAdd"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,5 +66,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uploadPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_testAdd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
