@@ -43,7 +43,7 @@ public class payment extends AppCompatActivity {
         tv_checkOut = findViewById(R.id.tv_CheckOut_view);
         tv_rooms = findViewById(R.id.tv_Rooms_view);
         btn_pay = findViewById(R.id.btn_pay);
-        tv_tot = findViewById(R.id.tv_tot);
+        //tv_tot = findViewById(R.id.tv_tot);
 
         Intent intent = getIntent();
 
